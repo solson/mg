@@ -110,6 +110,7 @@ end
 
 g = Graph.new
 
+_1_speed_bike           = g.band '1-Speed Bike'
 _68                     = g.band "'68"
 akron_family            = g.band 'Akron/Family'
 alice_cooper            = g.band 'Alice Cooper'
@@ -142,6 +143,7 @@ linkin_park             = g.band 'Linkin Park'
 listener                = g.band 'Listener'
 low                     = g.band 'Low'
 marilyn_manson          = g.band 'Marilyn Manson'
+matana_roberts          = g.band 'Matana Roberts'
 megadeth                = g.band 'Megadeth'
 metallica               = g.band 'Metallica'
 molasses                = g.band 'Molasses'
@@ -196,6 +198,7 @@ bryant_d        = g.person 'David Bryant'
 cameron_m       = g.person 'Matt Cameron'
 cawdron_b       = g.person 'Bruce Cawdron'
 chamberlin_j    = g.person 'Jimmy Chamberlin'
+chernoff_s      = g.person 'Scott Chernoff'
 cobain_k        = g.person 'Kurt Cobain'
 commerford_t    = g.person 'Tim Commerford'
 cook_t          = g.person 'Todd Cook'
@@ -206,8 +209,10 @@ crabtree_k      = g.person 'Kyle Crabtree'
 degrasso_j      = g.person 'Jimmy DeGrasso'
 eaton_d         = g.person 'Dan Eaton'
 enigk_j         = g.person 'Jeremy Enigk'
+erskine_f       = g.person 'Flüffy Erskine'
 everman_j       = g.person 'Jason Everman'
 foon_b          = g.person 'Beckie Foon'
+gamble_l        = g.person 'Lisa Gamble'
 gilmore_s       = g.person 'Scott Gilmore'
 gira_m          = g.person 'Michael Gira'
 girt_a          = g.person 'Aidan Girt'
@@ -217,11 +222,15 @@ grohl_d         = g.person 'Dave Grohl'
 grubbs_d        = g.person 'David Grubbs'
 harris_t        = g.person 'Thor Harris'
 hawkins_t       = g.person 'Taylor Hawkins'
+heistek_g       = g.person 'Genevieve Heistek'
 herndon_j       = g.person 'Johnny Herndon'
 irons_j         = g.person 'Jack Irons'
 jarboe          = g.person 'Jarboe'
 jehanian_g      = g.person 'Greg Jehanian'
+johnson_n       = g.person 'Norsola Johnson'
 keenan_m        = g.person 'Maynard James Keenan'
+krieger_g       = g.person 'Gordon Krieger'
+lawrence_k      = g.person 'Kate Lawrence'
 lenchantin_p    = g.person 'Paz Lenchantin'
 mangini_m       = g.person 'Mike Mangini'
 mangum_j        = g.person 'Jeff Mangum'
@@ -233,6 +242,7 @@ mendel_n        = g.person 'Nate Mendel'
 menuck_e        = g.person 'Efrim Menuck'
 morello_t       = g.person 'Tom Morello'
 moss_j          = g.person 'Jessica Moss'
+moss_n          = g.person 'Nadia Moss'
 moya_m          = g.person 'Mike Moya'
 mueller_j       = g.person 'Jeff Mueller'
 mustaine_d      = g.person 'Dave Mustaine'
@@ -247,6 +257,7 @@ payant_d        = g.person 'David Payant'
 pitrelli_a      = g.person 'Al Pitrelli'
 pratt_t         = g.person 'Thea Pratt'
 reznor_t        = g.person 'Trent Reznor'
+roberts_m       = g.person 'Matana Roberts'
 rocha_z         = g.person 'Zack de la Rocha'
 ryan_j          = g.person 'Jake Ryan'
 scharin_d       = g.person 'Doug Scharin'
@@ -257,6 +268,7 @@ smith_d         = g.person 'Dan Smith'
 sparhawk_a      = g.person 'Alan Sparhawk'
 sweeney_m       = g.person 'Matt Sweeney'
 tellier_craig_r = g.person 'Roger Tellier-Craig'
+truchy_j        = g.person 'Jean-Sebastien Truchy'
 trudeau_s       = g.person 'Sophie Trudeau'
 walford_b       = g.person 'Britt Walford'
 waters_j        = g.person 'Jeff Waters'
@@ -267,6 +279,7 @@ williams_h      = g.person 'Hayley Williams'
 g.edge cook_t, slint, 'label=touring style=dashed'
 g.edge mcmahan_m, slint, 'label=touring style=dashed'
 
+_1_speed_bike.member girt_a
 _68.member scogin_j
 alice_cooper.guest cornell_c
 alice_cooper.member degrasso_j
@@ -300,6 +313,8 @@ coheed_and_cambria.member hawkins_t
 deftones.guest keenan_m
 dream_theater.member mangini_m
 dream_theater.member sherinian_d
+efrim_menuck.guest amar_t
+efrim_menuck.guest moss_n
 efrim_menuck.guest moss_j
 efrim_menuck.guest payant_d
 efrim_menuck.member menuck_e
@@ -311,14 +326,17 @@ foo_fighters.member mendel_n
 gastr_del_sol.member grubbs_d
 gastr_del_sol.member orourke_j
 geology.member jehanian_g
+gybe.guest roberts_m
 gybe.member amar_t
 gybe.member bryant_d
 gybe.member cawdron_b
 gybe.member girt_a
+gybe.member johnson_n
 gybe.member menuck_e
 gybe.member moya_m
 gybe.member pratt_t
 gybe.member tellier_craig_r
+gybe.member trudeau_s
 hrsta.member moya_m
 hrsta.member trudeau_s
 jarboe_solo.guest lenchantin_p
@@ -332,12 +350,22 @@ low.member parker_m
 low.member sparhawk_a
 marilyn_manson.guest corgan_b
 marilyn_manson.guest reznor_t
+matana_roberts.member roberts_m
 megadeth.member degrasso_j
 megadeth.member mustaine_d
 megadeth.member pitrelli_a
 metallica.member mustaine_d
+molasses.guest cawdron_b
+molasses.guest gamble_l
+molasses.guest krieger_g
+molasses.guest menuck_e
 molasses.guest shalabi_s
+molasses.guest truchy_j
 molasses.member amar_t
+molasses.member chernoff_s
+molasses.member erskine_f
+molasses.member johnson_n
+molasses.member lawrence_k
 molasses.member moya_m
 mwy.guest enigk_j
 mwy.guest williams_h
@@ -386,11 +414,16 @@ savatage.guest waters_j
 savatage.member pitrelli_a
 sftf.member bryant_d
 sftf.member cawdron_b
+sftf.member erskine_f
 sftf.member foon_b
 sftf.member girt_a
+sftf.member heistek_g
+sftf.member krieger_g
 sftf.member moya_m
 sftf.member pratt_t
 sftf.member tellier_craig_r
+sftf.member truchy_j
+sftf.member trudeau_s
 shipping_news.member cook_t
 shipping_news.member crabtree_k
 shipping_news.member mueller_j
@@ -440,7 +473,15 @@ tool.member keenan_m
 tortoise.member herndon_j
 tortoise.member mccombs_d
 tortoise.member pajo_d
+tsmz.guest cawdron_b
+tsmz.guest gamble_l
 tsmz.guest girt_a
+tsmz.guest heistek_g
+tsmz.guest krieger_g
+tsmz.guest lawrence_k
+tsmz.guest moss_n
+tsmz.guest pratt_t
+tsmz.guest roberts_m
 tsmz.guest shalabi_s
 tsmz.member amar_t
 tsmz.member foon_b
