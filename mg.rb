@@ -111,6 +111,7 @@ end
 g = Graph.new
 
 _68                 = g.band "'68"
+akron_family        = g.band 'Akron/Family'
 alice_cooper        = g.band 'Alice Cooper'
 angels_of_light     = g.band 'Angels of Light'
 annihilator         = g.band 'Annihilator'
@@ -119,6 +120,7 @@ as_cities_burn      = g.band 'As Cities Burn'
 black_ox_orkestar   = g.band 'Black Ox Orkestar'
 broken_social_scene = g.band 'Broken Social Scene'
 dream_theater       = g.band 'Dream Theater'
+efrim_menuck        = g.band 'Efrim Manuel Menuck'
 geology             = g.band 'Geology'
 gybe                = g.band 'Godspeed You! Black Emperor'
 hrsta               = g.band 'HṚṢṬA'
@@ -138,7 +140,10 @@ the_chariot         = g.band 'The Chariot'
 tsmz                = g.band 'Thee Silver Mt. Zion Memorial Orchestra'
 tso                 = g.band 'Trans-Siberian Orchestra'
 
+akron_family.edge angels_of_light, 'label="guest + split" style=dashed'
+low.edge gybe, 'label="live performance" style=dotted dir=none'
 molasses.edge swans, 'label="lyrical ref." style=dotted'
+mwy.edge norma_jean, 'label=split style=dashed dir=none'
 
 amar_t          = g.person 'Thierry Amar'
 bryant_d        = g.person 'David Bryant'
@@ -157,6 +162,7 @@ moss_j          = g.person 'Jessica Moss'
 moya_m          = g.person 'Mike Moya'
 mustaine_d      = g.person 'Dave Mustaine'
 parker_m        = g.person 'Mimi Parker'
+payant_d        = g.person 'David Payant'
 pitrelli_a      = g.person 'Al Pitrelli'
 pratt_t         = g.person 'Thea Pratt'
 ryan_j          = g.person 'Jake Ryan'
@@ -170,11 +176,13 @@ trudeau_s       = g.person 'Sophie Trudeau'
 waters_j        = g.person 'Jeff Waters'
 weiss_a         = g.person 'Aaron Weiss'
 williams_h      = g.person 'Hayley Williams'
+harris_t = g.person 'Thor Harris'
 
 _68.member scogin_j
 alice_cooper.member degrasso_j
 alice_cooper.member pitrelli_a
 alice_cooper.member sherinian_d
+angels_of_light.guest harris_t
 angels_of_light.member gira_m
 annihilator.member mangini_m
 annihilator.member waters_j
@@ -187,6 +195,9 @@ black_ox_orkestar.member moss_j
 broken_social_scene.guest moss_j
 dream_theater.member mangini_m
 dream_theater.member sherinian_d
+efrim_menuck.guest moss_j
+efrim_menuck.guest payant_d
+efrim_menuck.member menuck_e
 geology.member jehanian_g
 gybe.member amar_t
 gybe.member bryant_d
@@ -228,6 +239,7 @@ sftf.member tellier_craig_r
 swans.guest parker_m
 swans.guest sparhawk_a
 swans.member gira_m
+swans.member harris_t
 swans.member jarboe
 the_chariot.guest smith_d
 the_chariot.guest weiss_a
@@ -242,6 +254,7 @@ tsmz.member foon_b
 tsmz.member gilmore_s
 tsmz.member menuck_e
 tsmz.member moss_j
+tsmz.member payant_d
 tsmz.member trudeau_s
 tso.member pitrelli_a
 
