@@ -124,51 +124,51 @@ savatage       = g.band 'Savatage'
 the_chariot    = g.band 'The Chariot'
 tso            = g.band 'Trans-Siberian Orchestra'
 
-a_pitrelli  = g.person 'Al Pitrelli'
-a_weiss     = g.person 'Aaron Weiss'
-d_eaton     = g.person 'Dan Eaton'
-d_mustaine  = g.person 'Dave Mustaine'
-d_sherinian = g.person 'Derek Sherinian'
-d_smith     = g.person 'Dan Smith'
-g_jehanian  = g.person 'Greg Jehanian'
-h_williams  = g.person 'Hayley Williams'
-j_degrasso  = g.person 'Jimmy DeGrasso'
-j_ryan      = g.person 'Jake Ryan'
-j_scogin    = g.person 'Josh Scogin'
-j_waters    = g.person 'Jeff Waters'
-m_mangini   = g.person 'Mike Mangini'
+degrasso_j  = g.person 'Jimmy DeGrasso'
+eaton_d     = g.person 'Dan Eaton'
+jehanian_g  = g.person 'Greg Jehanian'
+mangini_m   = g.person 'Mike Mangini'
+mustaine_d  = g.person 'Dave Mustaine'
+pitrelli_a  = g.person 'Al Pitrelli'
+ryan_j      = g.person 'Jake Ryan'
+scogin_j    = g.person 'Josh Scogin'
+sherinian_d = g.person 'Derek Sherinian'
+smith_d     = g.person 'Dan Smith'
+waters_j    = g.person 'Jeff Waters'
+weiss_a     = g.person 'Aaron Weiss'
+williams_h  = g.person 'Hayley Williams'
 
-_68.member j_scogin
-alice_cooper.member a_pitrelli
-alice_cooper.member d_sherinian
-alice_cooper.member j_degrasso
-annihilator.member j_waters
-annihilator.member m_mangini
-as_cities_burn.guest j_scogin
-dream_theater.member d_sherinian
-dream_theater.member m_mangini
-geology.member g_jehanian
-listener.member d_smith
-megadeth.member a_pitrelli
-megadeth.member d_mustaine
-megadeth.member j_degrasso
-metallica.member d_mustaine
-mwy.guest h_williams
-mwy.member a_weiss
-mwy.member g_jehanian
-norma_jean.guest a_weiss
-norma_jean.member j_scogin
-paramore.member h_williams
-queens_club.member d_eaton
-queens_club.member j_ryan
-savatage.guest j_waters
-savatage.member a_pitrelli
-the_chariot.guest a_weiss
-the_chariot.guest d_smith
-the_chariot.guest h_williams
-the_chariot.member d_eaton
-the_chariot.member j_ryan
-the_chariot.member j_scogin
-tso.member a_pitrelli
+_68.member scogin_j
+alice_cooper.member degrasso_j
+alice_cooper.member pitrelli_a
+alice_cooper.member sherinian_d
+annihilator.member mangini_m
+annihilator.member waters_j
+as_cities_burn.guest scogin_j
+dream_theater.member mangini_m
+dream_theater.member sherinian_d
+geology.member jehanian_g
+listener.member smith_d
+megadeth.member degrasso_j
+megadeth.member mustaine_d
+megadeth.member pitrelli_a
+metallica.member mustaine_d
+mwy.guest williams_h
+mwy.member jehanian_g
+mwy.member weiss_a
+norma_jean.guest weiss_a
+norma_jean.member scogin_j
+paramore.member williams_h
+queens_club.member eaton_d
+queens_club.member ryan_j
+savatage.guest waters_j
+savatage.member pitrelli_a
+the_chariot.guest smith_d
+the_chariot.guest weiss_a
+the_chariot.guest williams_h
+the_chariot.member eaton_d
+the_chariot.member ryan_j
+the_chariot.member scogin_j
+tso.member pitrelli_a
 
 puts g.generate_dot
