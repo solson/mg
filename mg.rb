@@ -59,8 +59,8 @@ class Graph
     dot = "digraph {\n"
 
     attributes = {
-      layout: 'neato',
-      sep: '"+12,12"',
+      layout: 'sfdp',
+      sep: '"+10,10"',
       overlap: 'false',
       splines: 'true',
     }
