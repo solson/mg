@@ -112,6 +112,7 @@ g = Graph.new
 
 _1_speed_bike           = g.band '1-Speed Bike'
 _68                     = g.band "'68"
+a7x                     = g.band 'Avenged Sevenfold'
 akron_family            = g.band 'Akron/Family'
 alice_cooper            = g.band 'Alice Cooper'
 alice_in_chains         = g.band 'Alice in Chains'
@@ -121,7 +122,9 @@ a_perfect_circle        = g.band 'A Perfect Circle'
 arcade_fire             = g.band 'Arcade Fire'
 as_cities_burn          = g.band 'As Cities Burn'
 audioslave              = g.band 'Audioslave'
+black_flag              = g.band 'Black Flag'
 black_ox_orkestar       = g.band 'Black Ox Orkestar'
+black_sabbath           = g.band 'Black Sabbath'
 bonnie_prince_billy     = g.band "Bonnie 'Prince' Billy"
 broken_social_scene     = g.band 'Broken Social Scene'
 chavez                  = g.band 'Chavez'
@@ -129,14 +132,22 @@ clipping                = g.band 'clipping.'
 codeine                 = g.band 'Codeine'
 coheed_and_cambria      = g.band 'Coheed and Cambria'
 deftones                = g.band 'Deftones'
+devo                    = g.band 'Devo'
+dirty_three             = g.band 'Dirty Three'
 dream_theater           = g.band 'Dream Theater'
 efrim_menuck            = g.band 'Efrim Manuel Menuck'
+electric_sheep          = g.band 'Electric Sheep'
+faith_no_more           = g.band 'Faith No More'
+fear_factory            = g.band 'Fear Factory'
 foo_fighters            = g.band 'Foo Fighters'
 fugazi                  = g.band 'Fugazi'
 gastr_del_sol           = g.band 'Gastr del Sol'
 geology                 = g.band 'Geology'
+guns_n_roses            = g.band "Guns N' Roses"
 gybe                    = g.band 'Godspeed You! Black Emperor'
 hrsta                   = g.band 'HṚṢṬA'
+in_the_fishtank_7       = g.band 'Low + Dirty Three'
+isis                    = g.band 'Isis'
 jarboe_solo             = g.band 'Jarboe'
 june_of_44              = g.band 'June of 44'
 linkin_park             = g.band 'Linkin Park'
@@ -152,46 +163,62 @@ nine_inch_nails         = g.band 'Nine Inch Nails'
 nirvana                 = g.band 'Nirvana'
 nmh                     = g.band 'Neutral Milk Hotel'
 norma_jean              = g.band 'Norma Jean'
-palace_brothers         = g.band 'Palace Brothers'
+pantera                 = g.band 'Pantera'
 paramore                = g.band 'Paramore'
 pearl_jam               = g.band 'Pearl Jam'
+primus                  = g.band 'Primus'
+puscifer                = g.band 'Puscifer'
+queen                   = g.band 'Queen'
 queens_club             = g.band 'Queens Club'
 queens_of_the_stone_age = g.band 'Queens of the Stone Age'
 rachels                 = g.band "Rachel's"
 ratm                    = g.band 'Rage Against The Machine'
 rhcp                    = g.band 'Red Hot Chili Peppers'
 rodan                   = g.band 'Rodan'
+run_dmc                 = g.band 'Run-DMC'
 run_the_jewels          = g.band 'Run the Jewels'
 savatage                = g.band 'Savatage'
+serj_tankian            = g.band 'Serj Tankian'
 sftf                    = g.band 'Set Fire To Flames'
 shipping_news           = g.band 'Shipping News'
 slint                   = g.band 'Slint'
+snoop_dogg              = g.band 'Snoop Dogg'
+soad                    = g.band 'System of a Down'
 sonic_youth             = g.band 'Sonic Youth'
 soundgarden             = g.band 'Soundgarden'
 squirrel_bait           = g.band 'Squirrel Bait'
 sunny_day_real_estate   = g.band 'Sunny Day Real Estate'
 superwolf               = g.band "Bonnie 'Prince' Billy + Matt Sweeney"
 swans                   = g.band 'Swans'
+tdep                    = g.band 'The Dillinger Escape Plan'
 tenacious_d             = g.band 'Tenacious D'
+the_brave_and_the_bold  = g.band "Bonnie 'Prince' Billy + Tortoise"
 the_chariot             = g.band 'The Chariot'
 the_for_carnation       = g.band 'The For Carnation'
+the_nightwatchman       = g.band 'The Nightwatchman'
+the_offspring           = g.band 'The Offspring'
 the_smashing_pumpkins   = g.band 'The Smashing Pumpkins'
 the_sonora_pine         = g.band 'The Sonora Pine'
+tony_iommi              = g.band 'Tony Iommi'
 tool                    = g.band 'Tool'
 tortoise                = g.band 'Tortoise'
 tsmz                    = g.band 'Thee Silver Mt. Zion Memorial Orchestra'
 tso                     = g.band 'Trans-Siberian Orchestra'
+weezer                  = g.band 'Weezer'
+wu_tang_clan            = g.band 'Wu-Tang Clan'
 zwan                    = g.band 'Zwan'
 
 # TODO: Factor some of this out.
 akron_family.edge angels_of_light, 'label="guest + split" style=dashed'
-low.edge gybe, 'label="live performance" style=dotted dir=none'
+gybe.edge low, 'label=live style=dotted'
 molasses.edge swans, 'label="lyrical ref." style=dotted'
 mwy.edge fugazi, 'label="lyrical ref." style=dotted'
 mwy.edge nmh, 'label="lyrical ref." style=dotted'
 mwy.edge norma_jean, 'label=split style=dashed dir=none'
 
+alexander_t     = g.person 'Tim Alexander'
 amar_t          = g.person 'Thierry Amar'
+anselmo_p       = g.person 'Phil Anselmo'
 boo_g           = g.person 'Gangsta Boo'
 brashear_t      = g.person 'Todd Brashear'
 bryant_d        = g.person 'David Bryant'
@@ -211,7 +238,9 @@ eaton_d         = g.person 'Dan Eaton'
 enigk_j         = g.person 'Jeremy Enigk'
 erskine_f       = g.person 'Flüffy Erskine'
 everman_j       = g.person 'Jason Everman'
+finck_r         = g.person 'Robin Finck'
 foon_b          = g.person 'Beckie Foon'
+freese_j        = g.person 'Josh Freese'
 gamble_l        = g.person 'Lisa Gamble'
 gilmore_s       = g.person 'Scott Gilmore'
 gira_m          = g.person 'Michael Gira'
@@ -224,16 +253,24 @@ harris_t        = g.person 'Thor Harris'
 hawkins_t       = g.person 'Taylor Hawkins'
 heistek_g       = g.person 'Genevieve Heistek'
 herndon_j       = g.person 'Johnny Herndon'
+hetfield_j      = g.person 'James Hetfield'
+iha_j           = g.person 'James Iha'
+iommi_t         = g.person 'Tony Iommi'
 irons_j         = g.person 'Jack Irons'
 jarboe          = g.person 'Jarboe'
 jehanian_g      = g.person 'Greg Jehanian'
 johnson_n       = g.person 'Norsola Johnson'
+jones_a         = g.person 'Adam Jones'
 keenan_m        = g.person 'Maynard James Keenan'
 krieger_g       = g.person 'Gordon Krieger'
 lawrence_k      = g.person 'Kate Lawrence'
+leeuwen_t       = g.person 'Troy Van Leeuwen'
 lenchantin_p    = g.person 'Paz Lenchantin'
+lohner_d        = g.person 'Danny Lohner'
 mangini_m       = g.person 'Mike Mangini'
 mangum_j        = g.person 'Jeff Mangum'
+martin_j        = g.person 'Jim Martin'
+may_b           = g.person 'Brian May'
 mccombs_d       = g.person 'Doug McCombs'
 mcmahan_b       = g.person 'Brian McMahan'
 mcmahan_m       = g.person 'Michael McMahan'
@@ -251,14 +288,18 @@ novoselic_k     = g.person 'Krist Novoselic'
 oldham_w        = g.person 'Will Oldham'
 oneil_j         = g.person "Tara Jane O'Neil"
 orourke_j       = g.person "Jim O'Rourke"
+osbourne_o      = g.person 'Ozzy Osbourne'
 pajo_d          = g.person 'David Pajo'
 parker_m        = g.person 'Mimi Parker'
+patton_m        = g.person 'Mike Patton'
 payant_d        = g.person 'David Payant'
 pitrelli_a      = g.person 'Al Pitrelli'
+portnoy_m       = g.person 'Mike Portnoy'
 pratt_t         = g.person 'Thea Pratt'
 reznor_t        = g.person 'Trent Reznor'
 roberts_m       = g.person 'Matana Roberts'
 rocha_z         = g.person 'Zack de la Rocha'
+rollins_h       = g.person 'Henry Rollins'
 ryan_j          = g.person 'Jake Ryan'
 scharin_d       = g.person 'Doug Scharin'
 scogin_j        = g.person 'Josh Scogin'
@@ -267,17 +308,37 @@ sherinian_d     = g.person 'Derek Sherinian'
 smith_d         = g.person 'Dan Smith'
 sparhawk_a      = g.person 'Alan Sparhawk'
 sweeney_m       = g.person 'Matt Sweeney'
+tankian_s       = g.person 'Serj Tankian'
 tellier_craig_r = g.person 'Roger Tellier-Craig'
 truchy_j        = g.person 'Jean-Sebastien Truchy'
 trudeau_s       = g.person 'Sophie Trudeau'
+vrenna_c        = g.person 'Chris Vrenna'
+waits_t         = g.person 'Tom Waits'
 walford_b       = g.person 'Britt Walford'
+ward_b          = g.person 'Bill Ward'
 waters_j        = g.person 'Jeff Waters'
 weiss_a         = g.person 'Aaron Weiss'
+white_j         = g.person 'Jeordie White'
 wilk_b          = g.person 'Brad Wilk'
 williams_h      = g.person 'Hayley Williams'
 
+# TODO: Factor some of this out.
+morello_t.edge tool, 'label=live style=dotted'
+tankian_s.edge tool, 'label=live style=dotted'
+tankian_s.edge fear_factory, 'label=live style=dotted'
+tankian_s.edge metallica, 'label=live style=dotted'
+tankian_s.edge foo_fighters, 'label=live style=dotted'
 g.edge cook_t, slint, 'label=touring style=dashed'
 g.edge mcmahan_m, slint, 'label=touring style=dashed'
+g.edge freese_j, paramore, 'label=touring style=dashed'
+g.edge freese_j, weezer, 'label=touring style=dashed'
+g.edge freese_j, nine_inch_nails, 'label=touring style=dashed'
+g.edge lohner_d, nine_inch_nails, 'label=touring style=dashed'
+g.edge white_j, nine_inch_nails, 'label=touring style=dashed'
+g.edge vrenna_c, nine_inch_nails, 'label=touring style=dashed'
+g.edge portnoy_m, a7x, 'label=touring style=dashed'
+g.edge freese_j, the_offspring, 'label=session style=dashed'
+g.edge wilk_b, black_sabbath, 'label=session style=dashed'
 
 _1_speed_bike.member girt_a
 _68.member scogin_j
@@ -290,9 +351,16 @@ angels_of_light.guest harris_t
 angels_of_light.member gira_m
 annihilator.member mangini_m
 annihilator.member waters_j
+a_perfect_circle.guest alexander_t
+a_perfect_circle.guest jarboe
 a_perfect_circle.guest reznor_t
+a_perfect_circle.member freese_j
+a_perfect_circle.member iha_j
 a_perfect_circle.member keenan_m
+a_perfect_circle.member leeuwen_t
 a_perfect_circle.member lenchantin_p
+a_perfect_circle.member lohner_d
+a_perfect_circle.member white_j
 arcade_fire.guest moss_j
 arcade_fire.guest trudeau_s
 as_cities_burn.guest scogin_j
@@ -300,10 +368,17 @@ audioslave.member commerford_t
 audioslave.member cornell_c
 audioslave.member morello_t
 audioslave.member wilk_b
+black_flag.member rollins_h
 black_ox_orkestar.member amar_t
 black_ox_orkestar.member gilmore_s
 black_ox_orkestar.member moss_j
+black_sabbath.member iommi_t
+black_sabbath.member osbourne_o
+black_sabbath.member ward_b
+bonnie_prince_billy.member brashear_t
+bonnie_prince_billy.member mcmahan_b
 bonnie_prince_billy.member oldham_w
+bonnie_prince_billy.member walford_b
 broken_social_scene.guest moss_j
 chavez.member sweeney_m
 clipping.guest boo_g
@@ -311,13 +386,20 @@ codeine.guest grubbs_d
 codeine.member scharin_d
 coheed_and_cambria.member hawkins_t
 deftones.guest keenan_m
+deftones.guest tankian_s
+devo.member freese_j
 dream_theater.member mangini_m
+dream_theater.member portnoy_m
 dream_theater.member sherinian_d
 efrim_menuck.guest amar_t
-efrim_menuck.guest moss_n
 efrim_menuck.guest moss_j
+efrim_menuck.guest moss_n
 efrim_menuck.guest payant_d
 efrim_menuck.member menuck_e
+electric_sheep.member jones_a
+electric_sheep.member morello_t
+faith_no_more.member martin_j
+faith_no_more.member patton_m
 foo_fighters.guest novoselic_k
 foo_fighters.member goldsmith_w
 foo_fighters.member grohl_d
@@ -326,6 +408,8 @@ foo_fighters.member mendel_n
 gastr_del_sol.member grubbs_d
 gastr_del_sol.member orourke_j
 geology.member jehanian_g
+guns_n_roses.member finck_r
+guns_n_roses.member freese_j
 gybe.guest roberts_m
 gybe.member amar_t
 gybe.member bryant_d
@@ -339,6 +423,9 @@ gybe.member tellier_craig_r
 gybe.member trudeau_s
 hrsta.member moya_m
 hrsta.member trudeau_s
+in_the_fishtank_7.member dirty_three
+in_the_fishtank_7.member low
+isis.guest jones_a
 jarboe_solo.guest lenchantin_p
 jarboe_solo.member jarboe
 june_of_44.member meadows_s
@@ -349,11 +436,17 @@ listener.member smith_d
 low.member parker_m
 low.member sparhawk_a
 marilyn_manson.guest corgan_b
+marilyn_manson.guest finck_r
+marilyn_manson.guest lohner_d
 marilyn_manson.guest reznor_t
+marilyn_manson.member vrenna_c
+marilyn_manson.member white_j
 matana_roberts.member roberts_m
 megadeth.member degrasso_j
 megadeth.member mustaine_d
 megadeth.member pitrelli_a
+metallica.guest martin_j
+metallica.member hetfield_j
 metallica.member mustaine_d
 molasses.guest cawdron_b
 molasses.guest gamble_l
@@ -372,6 +465,7 @@ mwy.guest williams_h
 mwy.member jehanian_g
 mwy.member weiss_a
 nine_inch_nails.guest grohl_d
+nine_inch_nails.member finck_r
 nine_inch_nails.member reznor_t
 nirvana.member cobain_k
 nirvana.member everman_j
@@ -380,18 +474,27 @@ nirvana.member novoselic_k
 nmh.member mangum_j
 norma_jean.guest weiss_a
 norma_jean.member scogin_j
-palace_brothers.member brashear_t
-palace_brothers.member mcmahan_b
-palace_brothers.member oldham_w
-palace_brothers.member walford_b
+pantera.member anselmo_p
 paramore.member williams_h
 pearl_jam.member cameron_m
 pearl_jam.member irons_j
+primus.guest hetfield_j
+primus.guest martin_j
+primus.guest morello_t
+primus.guest waits_t
+primus.member alexander_t
+puscifer.guest morello_t
+puscifer.member alexander_t
+puscifer.member keenan_m
+puscifer.member lohner_d
+queen.member may_b
 queens_club.member eaton_d
 queens_club.member ryan_j
+queens_of_the_stone_age.guest freese_j
 queens_of_the_stone_age.guest lenchantin_p
 queens_of_the_stone_age.guest reznor_t
 queens_of_the_stone_age.member grohl_d
+queens_of_the_stone_age.member leeuwen_t
 rachels.guest mueller_j
 rachels.member coultas_k
 rachels.member crabtree_k
@@ -407,11 +510,14 @@ rodan.member coultas_k
 rodan.member mueller_j
 rodan.member noble_j
 rodan.member oneil_j
+run_dmc.guest morello_t
 run_the_jewels.guest boo_g
 run_the_jewels.guest rocha_z
 run_the_jewels.guest sweeney_m
 savatage.guest waters_j
 savatage.member pitrelli_a
+serj_tankian.guest morello_t
+serj_tankian.member tankian_s
 sftf.member bryant_d
 sftf.member cawdron_b
 sftf.member erskine_f
@@ -432,6 +538,8 @@ slint.member brashear_t
 slint.member mcmahan_b
 slint.member pajo_d
 slint.member walford_b
+snoop_dogg.guest morello_t
+soad.member tankian_s
 sonic_youth.member orourke_j
 soundgarden.member cameron_m
 soundgarden.member cornell_c
@@ -449,7 +557,10 @@ swans.guest sparhawk_a
 swans.member gira_m
 swans.member harris_t
 swans.member jarboe
+tdep.member patton_m
 tenacious_d.guest grohl_d
+the_brave_and_the_bold.member oldham_w
+the_brave_and_the_bold.member tortoise
 the_chariot.guest smith_d
 the_chariot.guest weiss_a
 the_chariot.guest williams_h
@@ -463,12 +574,26 @@ the_for_carnation.member mccombs_d
 the_for_carnation.member mcmahan_b
 the_for_carnation.member mcmahan_m
 the_for_carnation.member pajo_d
+the_nightwatchman.guest tankian_s
+the_nightwatchman.member morello_t
 the_smashing_pumpkins.member chamberlin_j
 the_smashing_pumpkins.member corgan_b
+the_smashing_pumpkins.member iha_j
 the_sonora_pine.guest grimes_r
 the_sonora_pine.member coultas_k
 the_sonora_pine.member meadows_s
 the_sonora_pine.member oneil_j
+tony_iommi.guest anselmo_p
+tony_iommi.guest cameron_m
+tony_iommi.guest corgan_b
+tony_iommi.guest grohl_d
+tony_iommi.guest may_b
+tony_iommi.guest osbourne_o
+tony_iommi.guest rollins_h
+tony_iommi.guest tankian_s
+tony_iommi.guest ward_b
+tony_iommi.member iommi_t
+tool.member jones_a
 tool.member keenan_m
 tortoise.member herndon_j
 tortoise.member mccombs_d
@@ -491,6 +616,7 @@ tsmz.member moss_j
 tsmz.member payant_d
 tsmz.member trudeau_s
 tso.member pitrelli_a
+wu_tang_clan.guest morello_t
 zwan.member chamberlin_j
 zwan.member corgan_b
 zwan.member lenchantin_p
